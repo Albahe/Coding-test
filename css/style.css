@@ -2,6 +2,7 @@ body{
 	font-family: Helvetica, arial, sans-serif;
 	text-align: center;
 	margin: 0 auto;
+	justify-items: center;
 }
 
 h1{
@@ -18,18 +19,30 @@ p{
 	max-width: 600px;
 }
 
+.box{
+	border-radius: 2px;
+	border: transparent;
+	position: relative;
+	max-width: 800px;
+	width: 98%;
+	height: 400px;
+}
+
 .RedSquare{
 	width: 150px;
 	height: 150px;
-	margin-left: 35%;
-	float: left;
 	background-color: red;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	float: left;
 	transition: all 2s;
 }
 
 .RedSquare.YellowCircle{
 	background-color: yellow;
 	border-radius: 50%;
-	margin-left: 55%;
-	margin-top: 10%;
+	top: 100%;
+	left: 100%;
+	transform: translate(-100%, -100%);
 }
